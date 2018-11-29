@@ -60,7 +60,6 @@ async def execute(sql, args):
             raise
         return affected
 
-
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
 loop.run_forever()
